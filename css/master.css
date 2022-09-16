@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: antiquewhite;
+    font-family: 'Open Sans', sans-serif;
+}
+.main {
+    width: 650px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 30px;
+    height: 488px;
+    display: flex;
+    margin: 44px auto 0 auto;
+}
+.main .mobile {
+    display: none;
+}
+.main .desk {
+    width: 50%;
+}
+@media (max-width:767px){
+    .main {
+        flex-direction: column;
+        width: 300px;
+        height: 700px;
+    }
+    .main .mobile {
+        display: block;
+        width: 100%;
+    }
+    .main .desk {
+        display: none;
+    }
+}
+
+.main .info {
+    margin-top: 70px;
+    position: relative;
+}
+.main .info p:first-child {
+    width: 100px;
+    font-size: 20px;
+    color: #777;
+    margin-left: 30px;
+    text-transform: uppercase;
+    margin-top: -25px;
+}
+.main .info h2 {
+    font-size: 35px;
+    width: 215px;
+    margin-left: 30px;
+    font-family: 'Fraunces', serif;
+    margin-top: 31px;
+}
+.main .info .naf{
+    font-size: 14px;
+    width: 230px;
+    line-height: 2;
+    color: #777;
+    margin-left: 30px;
+    margin-top: 18px;
+}
+.main .info .price {
+    display: inline;
+    font-size: 30px;
+    margin-left: 30px;
+    color: #3d8168;
+    font-family: 'Fraunces', serif;
+}
+.main .info .old {
+    display: inline;
+    margin-left: 45px;
+    color: #777;
+    text-decoration: line-through;
+    font-size: 18px;
+}
+.main .cart {
+    width: 230px;
+    color: white;
+    background-color: #3d8168;
+    height: 45px;
+    border-radius: 10px;
+    margin-left: 30px;
+    position: absolute;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    transition: 0.3s ease;
+    cursor:pointer;
+    margin-top: 30px;
+}
+.main .cart:hover {
+    background-color: #1a4031;
+}
+.main  .cart .add {
+    color: white;
+    font-size: 16px;
+    margin-right: 20px;
+    text-transform: capitalize;
+}
+.main  .cart i {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
